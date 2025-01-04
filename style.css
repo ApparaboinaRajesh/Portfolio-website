@@ -1,0 +1,272 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #4CAF50, #1E88E5);
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Hero Section */
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1E88E5, #4CAF50);
+    color: white;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #home img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #home img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+  }
+  
+  #home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 60px 20px;
+    background: #f4f4f9;
+    color: #333;
+  }
+  
+  #projects h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project {
+    display: inline-block;
+    margin: 15px;
+    text-align: left;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .project img {
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #4caf50;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 10px 5px;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 10px 15px;
+  }
+  
+  /* Contact Section (Colorful) */
+  #contact {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb);
+    text-align: center;
+    color: white;
+  }
+  
+  #contact h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  form input, form textarea {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  form input:hover, form textarea:hover {
+    transform: translateY(-3px); /* Slightly lift input fields */
+    background-color: #ffe4e1; /* Change background on hover */
+  }
+  
+  form button {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  form button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: translateY(-3px); /* Lift button on hover */
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Hover Effects */
+  .project:hover {
+    transform: translateY(-5px); /* Lift project card on hover */
+  }
+  
+  form input, form textarea, form button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #home h2 {
+      font-size: 2rem;
+    }
+  
+    #home p {
+      font-size: 1rem;
+    }
+  
+    .project {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    form input, form textarea {
+      width: 80%;
+    }
+  
+    form button {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #home h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .project {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    form input, form textarea {
+      width: 90%;
+    }
+  
+    form button {
+      width: 90%;
+    }
+  }
